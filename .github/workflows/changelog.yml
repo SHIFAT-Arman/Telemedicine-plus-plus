@@ -1,0 +1,39 @@
+name: Update Changelog
+
+permissions:
+  contents: write
+  pull-requests: read
+  
+on:
+  pull_request:
+    types:
+      - closed  # runs when PR is closed
+  workflow_dispatch: # allows manual run too
+
+jobs:
+  update-changelog:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract commit messages from PR
+        id: commits
+        run: |
+          echo "COMMITS=$(gh pr view ${{ github.event.pull_request.number }} --json commits --jq '.commits[].commit.message' | tr '\n' ';')" >> $GITHUB_ENV
+
+      - name: Append commit messages to CHANGELOG.md
+        run: |
+          echo "### PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}" >> CHANGELOG.md
+          echo "${COMMITS//;/\\n}" >> CHANGELOG.md
+          echo "" >> CHANGELOG.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          git commit -m "chore: update changelog for PR #${{ github.event.pull_request.number }}"
+          git push
