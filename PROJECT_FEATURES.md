@@ -2,3 +2,4 @@
 ## Diagrams
 - Use case
 - Activity
+- Sequence
