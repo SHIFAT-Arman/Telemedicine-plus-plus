@@ -26,3 +26,6 @@
 ### PR #9 - add: SMI, Conclusion
 
 
+### PR #10 - add: class diagram
+
+
