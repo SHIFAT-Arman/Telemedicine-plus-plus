@@ -13,3 +13,6 @@
 ### PR #5 - add timeline chart(detailed)
 
 
+### PR #6 - add: project proposal
+
+
