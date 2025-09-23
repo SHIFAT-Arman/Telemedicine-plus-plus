@@ -39,12 +39,12 @@ Timeline Charts
 
 ## Screenshots
 - Landigng page\
-![Landing Page ss](images\image-1.png)
+![Landing Page ss](images/image-1.png)
 - Sitter page\
-![sitter page ss](images\image-3.png)
+![sitter page ss](images/image-3.png)
 - Patient Dashboard\
-![Patient Dashboard ss](images\image-2.png)
+![Patient Dashboard ss](images/image-2.png)
 - Sitter Appointments\
-![sitter appointments ss](images\image-4.png)
+![sitter appointments ss](images/image-4.png)
 - Live meeting with transcribe\
-![live meeting ss](images\image-5.png)
+![live meeting ss](images/image-5.png)
