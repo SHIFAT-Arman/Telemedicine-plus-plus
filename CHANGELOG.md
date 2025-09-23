@@ -32,3 +32,6 @@
 ### PR #11 - add: Functional req and Non functional reqs
 
 
+### PR #12 - add: UI-UX design screenshots
+
+
