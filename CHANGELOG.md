@@ -29,3 +29,6 @@
 ### PR #10 - add: class diagram
 
 
+### PR #11 - add: Functional req and Non functional reqs
+
+
