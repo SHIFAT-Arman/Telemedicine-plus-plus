@@ -12,3 +12,5 @@
 ## Scheduling and Estimation
 
 ## SMI, conclusion
+
+## Functional Requirements and Non Functional requirements
