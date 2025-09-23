@@ -16,3 +16,6 @@
 ### PR #6 - add: project proposal
 
 
+### PR #7 - add: schedule, est, risk
+
+
