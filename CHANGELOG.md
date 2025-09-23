@@ -35,3 +35,6 @@
 ### PR #12 - add: UI-UX design screenshots
 
 
+### PR #13 - update: Readme with proper texts
+
+
